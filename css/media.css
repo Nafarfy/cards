@@ -22,9 +22,13 @@
     top: 162px;
     left: 116px;
   }
+
+  #section .section-item .img-item {
+    height: 197px;
+  }
 }
 
-/* landscape */
+/* Landscape */
 @media(max-height: 500px) {
   #section {
     display: grid;
@@ -51,8 +55,13 @@
     top: 162px;
     left: 116px;
   }
+
+  #section .section-item .img-item {
+    height: 197px;
+  }
 }
 
+/* Landscape smaller device*/
 @media(max-height: 320px) {
   #section {
     display: grid;

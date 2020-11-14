@@ -90,6 +90,7 @@ body {
 }
 
 #section .section-item .img-item {
+  height: 170px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;
