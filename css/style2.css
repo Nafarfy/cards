@@ -26,9 +26,9 @@ body {
   margin: 4.7rem 1.5rem 0 0;
   text-align: center;
   color: #f4f4f4;
-  box-shadow: 0px 0px 14px -3px #000000; 
-  border-radius: 15px;
   background: rgb(149,174,204);
+  border-radius: 15px;
+  box-shadow: 0px 0px 14px -3px #000000; 
   transition: all .5s;
 }
 
@@ -69,13 +69,13 @@ body {
   justify-content: center;
   top: 135px;
   left: 95px;
-  font-size: 30px;
-  font-weight: bold;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
   color:rgb(149,174,204);
   background: #f4f4f4;
+  border-radius: 50%;
   transition: all .5s;
 }
 
@@ -113,7 +113,10 @@ body {
 }
 
 #section .section-item a {
-  margin-top: 4rem;
+  display: block;
+  width: 100px;
+  padding: 5px 0;
+  margin: 4rem auto 0 auto;
   text-transform: uppercase;
   font-weight: bold;
   color: #f4f4f4;
