@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(201,220,242);
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(201,220,242) 65%, rgb(149,174,204) 49%);
+}
+
+#section .section-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 260px;
+  height: 500px;
+  margin: 4.7rem 1.5rem 0 0;
+  text-align: center;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 14px -3px #000000; 
+  border-radius: 15px;
+  background: rgb(149,174,204);
+  transition: all .5s;
+}
+
+#section .section-item:last-child {
+  margin-right: 0;
+}
+
+/* Добавляем хаверы */
+#section .section-item:hover {
+  background: #f4f4f4;
+}
+
+#section .section-item:hover img {
+  transform: scale(1.1);
+}
+
+#section .section-item:hover p,
+#section .section-item:hover h2,
+#section .section-item:hover a {
+  color: rgb(149,174,204);
+}
+
+#section .section-item:hover:after {
+  color: #f4f4f4;
+  background: rgb(149,174,204);
+}
+
+#section .section-item a:hover {
+  transform: translateY(-5px);
+}
+
+/* Добавляем буквы */
+#section .section-item:after {
+  content: 'A.';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 135px;
+  left: 95px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color:rgb(149,174,204);
+  background: #f4f4f4;
+  transition: all .5s;
+}
+
+#section .section-item:nth-child(2):after {
+  content: 'B.';
+}
+#section .section-item:nth-child(3):after {
+  content: 'C.';
+}
+#section .section-item:last-child:after {
+  content: 'D.';
+}
+
+#section .section-item .img-item {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+#section .section-item .img-item img {
+  width: 100%;
+  transition: all .5s;
+}
+
+#section .section-item h2 {
+  margin-top: 3rem;
+  transition: all .5s;
+}
+
+#section .section-item p {
+  width: 200px;
+  margin: 2rem auto 0 auto;
+  transition: all .5s;
+}
+
+#section .section-item a {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f4f4f4;
+  transition: all .5s;
+}
+
